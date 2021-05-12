@@ -1,0 +1,41 @@
+@import '_timeline.scss';
+body{
+  background-color: black;
+  color: whitesmoke;
+}
+
+section{
+  padding-top: 20px;
+}
+
+a:not(.nav-link){
+  color: whitesmoke;
+  text-decoration: underline;
+}
+
+#navbar{
+  background-color: rgb(231, 143, 12);
+  .navbar-brand{
+    text-decoration: none;
+  }
+}
+
+.sectionTitle{
+  align-items: center;
+  color: whitesmoke;
+  display: flex;
+  margin: 7%;
+  &:before, &:after{
+    border-bottom: 1px solid whitesmoke;
+    content: '';
+    flex: 1;
+    margin: 0 40px;
+  }
+}
+
+.sectionSubTitle{
+  border-bottom: 1px solid whitesmoke;
+  color: whitesmoke;
+  margin: 3%;
+  padding-bottom: 1%;
+}
