@@ -398,7 +398,7 @@ a:not(.nav-link) {
     align-items: center;
     color: whitesmoke;
     display: flex;
-    margin: 7%
+    margin: 6%
 }
 
 .sectionTitle:before, .sectionTitle:after {
