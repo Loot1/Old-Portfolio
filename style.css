@@ -77,8 +77,6 @@
         height: 60px;
         left: 50%;
         margin-left: -30px;
-        -webkit-transform: translateZ(0);
-        -webkit-backface-visibility: hidden
     }
 }
 
@@ -161,7 +159,6 @@
 
 #cd-timeline .cd-timeline-block .cd-timeline-content .cd-date {
     display: inline-block;
-    float: left;
     padding: .8em 0;
     opacity: .7
 }
@@ -398,7 +395,7 @@ a:not(.nav-link) {
     align-items: center;
     color: whitesmoke;
     display: flex;
-    margin: 6%
+    margin: 7%
 }
 
 .sectionTitle:before, .sectionTitle:after {
@@ -412,5 +409,12 @@ a:not(.nav-link) {
     border-bottom: 1px solid whitesmoke;
     color: whitesmoke;
     margin: 3%;
+    padding-bottom: 1%
+}
+
+.sectionSubSubTitle {
+    border-bottom: 1px solid whitesmoke;
+    color: whitesmoke;
+    margin: 6%;
     padding-bottom: 1%
 }
