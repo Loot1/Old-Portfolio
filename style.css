@@ -380,7 +380,6 @@ section {
 
 a:not(.nav-link) {
     color: whitesmoke;
-    text-decoration: underline
 }
 
 #navbar {
