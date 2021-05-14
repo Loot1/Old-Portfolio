@@ -1,3 +1,5 @@
+<?php $age= "19 ans"; ?>
+
 <!DOCTYPE html>
 <html lang="fr" dir="ltr">
 
@@ -47,7 +49,9 @@
             <div class="row">
               <div class="col-6 col-sm-6 col-md-6 col-lg-4 col-xl-4 p-4">
                 <i class="fa fa-birthday-cake"></i>
-                <p class="font-weight-bold">19 ans</p>
+                <p class="font-weight-bold">
+                  <?php echo "dfd" ?>
+                </p>
               </div>
               <div class="col-6 col-sm-6 col-md-6 col-lg-4 col-xl-4 p-4">
                 <i class="fas fa-home"></i>
