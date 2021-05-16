@@ -85,8 +85,8 @@
 
 #cd-timeline .cd-timeline-block .cd-timeline-img img {
     display: block;
-    width: 35px;
-    height: 35px;
+    width: 65%;
+    height: 65%;
     position: relative;
 }
 
