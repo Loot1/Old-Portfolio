@@ -27,6 +27,9 @@
             <a class="nav-link" href="#skills">Compétences</a>
           </li>
           <li class="nav-item">
+            <a class="nav-link" href="#projects">Projets</a>
+          </li>
+          <li class="nav-item">
             <a class="nav-link" href="#career">Parcours</a>
           </li>
           <li class="nav-item">
@@ -206,6 +209,61 @@
         </div>
       </div>
     </section>
+    <section id="projects">
+      <h2 class="sectionTitle">Projets</h2>
+      <div class="row">
+        <div class="col-12 col-sm-12 col-md-6 col-lg-4 col-xl-4 mt-4">
+          <div class="p-3 projectCard">
+              <div class="d-flex flex-row mb-3 align-items-center">
+                  <img src="img/projects/cordiste.png" alt="" width="70" class="rounded"/>
+                  <p class="text-white h4 ml-2 px-5">Expérience Cordiste</p>
+              </div>
+              <p>Projet de formation visant à créer une application mobile vitrine pour un artisan local.</p>
+              <p>J'ai pour cela choisi Expérience Cordiste, une entreprise de Amiens spécialisée dans les travaux en hauteur.</p>
+          </div>
+        </div>
+        <div class="col-12 col-sm-12 col-md-6 col-lg-4 col-xl-4 mt-4">
+            <div class="p-3 projectCard">
+                <div class="d-flex flex-row mb-3 align-items-center">
+                    <img src="img/projects/gitloot.jpg" alt="" width="70" class="rounded"/>
+                    <p class="text-white h4 ml-2 px-5">Gitloot</p>
+                </div>
+                <p>Extension Visual Studio Code permettant d'envoyer son code via Git sur Github ou Gitlab d'un simple raccourci clavier via la palette de commandes du logiciel.</p>
+                <p>J'ai eu l'opportunité de me documenter sur Visual Studio Code, une formidable expérience que j'ai faite surtout pour avoir une meilleure appréhension du logiciel sur lequel je développe chaque jour.</p>
+            </div>
+        </div>
+        <div class="col-12 col-sm-12 col-md-6 col-lg-4 col-xl-4 mt-4">
+          <div class="p-3 projectCard">
+              <div class="d-flex flex-row mb-3 align-items-center">
+                  <img src="img/projects/justice.jpg" alt="" width="70" class="rounded"/>
+                  <p class="text-white h4 ml-2 px-5">Justice</p>
+              </div>
+              <p>Bot Discord entretenant une liste d'utilisateurs dites liste noire avec un comportement inapproprié sur l'application.</p>
+              <p>Ce projet a été l'occasion pour moi de me pencher davantage sur le système de gestion de fichiers de NodeJS et d'apprendre à mieux connaître la librairie DiscordJS.</p>
+          </div>
+      </div>
+      <div class="col-12 col-sm-12 col-md-6 col-lg-4 col-xl-4 mt-4">
+        <div class="p-3 projectCard">
+            <div class="d-flex flex-row mb-3 align-items-center">
+                <img src="img/projects/anonyme.jpg" alt="" width="70" class="rounded"/>
+                <p class="text-white h4 ml-2 px-5">Anonyme</p>
+            </div>
+            <p>Bot Discord dans le cadre d'une plateforme d'entraide permettant aux utilisateurs de s'exprimer en tout anonymat dans un salon prédéfini.</p>
+            <p>Un projet très simple mais qui me tient à coeur car c'est sûrement mon projet qui a eu le plus de retour d'utilisateurs.</p>
+        </div>
+      </div>
+      <div class="col-12 col-sm-12 col-md-6 col-lg-4 col-xl-4 mt-4">
+        <div class="p-3 projectCard">
+            <div class="d-flex flex-row mb-3 align-items-center">
+                <img src="img/projects/servers.png" alt="" width="70" class="rounded"/>
+                <p class="text-white h4 ml-2 px-5">Servers Managers</p>
+            </div>
+            <p>Script ayant comme fonctionnalité de gérer un ou plusieurs serveurs de jeux sous Debian. On peut démarrer, éteindre, redémarrer, afficher la console, voir le statut ou encore sauvegarder sous fichier ZIP le serveur de jeu.</p>
+            <p>Cela a été une vraie expérience totalement en dehors de ma zone de confort.</p>
+        </div>
+      </div>
+    </div>
+    </section>
     <section id="career">
       <div class="row">
         <div class="col-12">
@@ -213,7 +271,7 @@
           <div id="cd-timeline" class="cd-container">
             <div class="cd-timeline-block">
               <div class="cd-timeline-img cd-work-experience bg-success">
-                <img src="img/cap.png" alt=""/>
+                <img src="img/timelines/cap.png" alt=""/>
               </div>
               <div class="cd-timeline-content">
                 <p class="job-title"><strong>POEC Développeur d'applications mobiles</strong></p>
@@ -229,18 +287,8 @@
               </div>
             </div>
             <div class="cd-timeline-block">
-              <div class="cd-timeline-img cd-work-experience bg-info">
-                <img src="img/rocket.png" alt="" />
-              </div>
-              <div class="cd-timeline-content">
-                <p class="job-title"><strong>Gitloot</strong></p>
-                <p>Extension Visual Studio Code permettant d'envoyer son code via Git sur Github ou Gitlab d'un simple raccourci clavier via la palette de commandes du logiciel.</p>
-                <p>J'ai eu l'opportunité de me documenter sur Visual Studio Code, une formidable expérience que j'ai faite surtout pour avoir une meilleure appréhension du logiciel sur lequel je développe chaque jour.</p>
-              </div>
-            </div>
-            <div class="cd-timeline-block">
               <div class="cd-timeline-img cd-work-experience bg-danger">
-                <img src="img/work.png" alt="" />
+                <img src="img/timelines/work.png" alt="" />
               </div>
               <div class="cd-timeline-content">
                 <p class="job-title"><strong>Volontaire</strong></p>
@@ -250,28 +298,8 @@
               </div>
             </div>
             <div class="cd-timeline-block">
-              <div class="cd-timeline-img cd-work-experience bg-info">
-                <img src="img/rocket.png" alt="" />
-              </div>
-              <div class="cd-timeline-content">
-                <p class="job-title"><strong>Justice</strong></p>
-                <p>Bot Discord entretenant une liste d'utilisateurs dites liste noire avec un comportement inapproprié sur l'application.</p>
-                <p>Ce projet a été l'occasion pour moi de me pencher davantage sur le système de gestion de fichiers de NodeJS et d'apprendre à mieux connaître la librairie DiscordJS.</p>
-              </div>
-            </div>
-            <div class="cd-timeline-block">
-              <div class="cd-timeline-img cd-work-experience bg-info">
-                <img src="img/rocket.png" alt="" />
-              </div>
-              <div class="cd-timeline-content">
-                <p class="job-title"><strong>Anonyme</strong></p>
-                <p>Bot Discord dans le cadre d'une plateforme d'entraide permettant aux utilisateurs de s'exprimer en tout anonymat dans un salon prédéfini.</p>
-                <p>Un projet très simple mais qui me tient à coeur car c'est sûrement mon projet qui a eu le plus de retour d'utilisateurs.</p>
-              </div>
-            </div>
-            <div class="cd-timeline-block">
               <div class="cd-timeline-img cd-work-experience bg-danger">
-                <img src="img/work.png" alt="" />
+                <img src="img/timelines/work.png" alt="" />
               </div>
               <div class="cd-timeline-content">
                 <p class="job-title"><strong>Élève infirmier</strong></p>
@@ -282,23 +310,13 @@
             </div>
             <div class="cd-timeline-block">
               <div class="cd-timeline-img cd-work-experience bg-success">
-                <img src="img/cap.png" alt="" />
+                <img src="img/timelines/cap.png" alt="" />
               </div>
               <div class="cd-timeline-content">
                 <p class="job-title"><strong>Baccalauréat scientifique</strong></p>
                 <p class="business"><i class="fa fa-map-marker"></i>&nbsp;&nbsp;Lycée Georges Brassens, Neufchâtel-en-Bray</p>
                 <p>Option Informatique et Sciences du Numérique & Langues et Cultures de l'Antiquité (Latin).</p>
                 <p><span class="cd-date">2019 - 2020</span></p>
-              </div>
-            </div>
-            <div class="cd-timeline-block">
-              <div class="cd-timeline-img cd-work-experience bg-info">
-                <img src="img/rocket.png" alt="" />
-              </div>
-              <div class="cd-timeline-content">
-                <p class="job-title"><strong>Minecraft Servers Manager</strong></p>
-                <p>Script ayant comme fonctionnalité de gérer un ou plusieurs serveurs de jeux sous Debian. On peut démarrer, éteindre, redémarrer, afficher la console, voir le statut ou encore sauvegarder sous fichier ZIP le serveur de jeu.</p>
-                <p>Cela a été une vraie expérience totalement en dehors de ma zone de confort.</p>
               </div>
             </div>
           </div>
@@ -312,7 +330,7 @@
           <div id="cd-timeline" class="cd-container">
             <div class="cd-timeline-block">
               <div class="cd-timeline-img cd-work-experience bg-danger">
-                <img src="img/work.png" alt="" />
+                <img src="img/timelines/work.png" alt="" />
               </div>
               <div class="cd-timeline-content">
                 <p class="job-title"><strong>Équipier Secouriste</strong></p>
@@ -323,7 +341,7 @@
             </div>
             <div class="cd-timeline-block">
               <div class="cd-timeline-img cd-work-experience bg-danger">
-                <img src="img/work.png" alt="" />
+                <img src="img/timelines/work.png" alt="" />
               </div>
               <div class="cd-timeline-content">
                 <p class="job-title"><strong>Assistant pédagogique</strong></p>
@@ -334,7 +352,7 @@
             </div>
             <div class="cd-timeline-block">
               <div class="cd-timeline-img cd-work-experience bg-success">
-                <img src="img/cap.png" alt="" />
+                <img src="img/timelines/cap.png" alt="" />
               </div>
               <div class="cd-timeline-content">
                 <p class="job-title"><strong>Premiers Secours en Équipe de niveau 2</strong></p>
@@ -344,7 +362,7 @@
             </div>
             <div class="cd-timeline-block">
               <div class="cd-timeline-img cd-work-experience bg-success">
-                <img src="img/cap.png" alt="" />
+                <img src="img/timelines/cap.png" alt="" />
               </div>
               <div class="cd-timeline-content">
                 <p class="job-title"><strong>Premiers Secours en Équipe de niveau 1</strong></p>
