@@ -393,6 +393,7 @@ a:not(.nav-link) {
 
 .sectionTitle {
     align-items: center;
+    justify-content: center;
     color: whitesmoke;
     display: flex;
     margin: 7%;
