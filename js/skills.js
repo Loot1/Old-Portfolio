@@ -20,9 +20,10 @@ const skills = {
         {title:"Flutter", level:0}
     ],
     tools: [
-        {title:"Git", color:"success", level:3},
-        {title:"Visual Studio Code", color:"success", level:3},
-        {title:"Android Studio", color:"success", level:2}
+        {title:"Git", level:3},
+        {title:"Visual Studio Code", level:3},
+        {title:"Android Studio", level:2},
+        {title:"Expo", level:2}
     ]
 }
 
