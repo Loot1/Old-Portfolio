@@ -13,22 +13,9 @@
     background: #D7E4ED;
 }
 
-@media only screen and (min-width: 1170px) {
-    #cd-timeline:before {
-        left: 50%;
-        margin-left: -2px;
-    }
-}
-
 #cd-timeline .cd-timeline-block {
     position: relative;
     margin: 2em 0;
-}
-
-@media only screen and (min-width: 1170px) {
-    #cd-timeline .cd-timeline-block {
-        margin: 4em 0;
-    }
 }
 
 #cd-timeline .cd-timeline-block .opquast {
@@ -45,20 +32,8 @@
     margin-top: 0;
 }
 
-@media only screen and (min-width: 1170px) {
-    #cd-timeline .cd-timeline-block:first-child {
-        margin-top: 0;
-    }
-}
-
 #cd-timeline .cd-timeline-block:last-child {
     margin-bottom: 0;
-}
-
-@media only screen and (min-width: 1170px) {
-    #cd-timeline .cd-timeline-block:last-child {
-        margin-bottom: 0;
-    }
 }
 
 #cd-timeline .cd-timeline-block .cd-timeline-img {
@@ -74,32 +49,11 @@
     align-items: center;
 }
 
-@media only screen and (min-width: 1170px) {
-    #cd-timeline .cd-timeline-block .cd-timeline-img {
-        width: 60px;
-        height: 60px;
-        left: 50%;
-        margin-left: -30px;
-    }
-}
-
 #cd-timeline .cd-timeline-block .cd-timeline-img img {
     display: block;
     width: 65%;
     height: 65%;
     position: relative;
-}
-
-@media only screen and (min-width: 1170px) {
-    #cd-timeline .cd-timeline-block .cd-timeline-img.is-hidden {
-        visibility: hidden;
-    }
-    #cd-timeline .cd-timeline-block .cd-timeline-img.bounce-in {
-        visibility: visible;
-        -webkit-animation: cd-bounce-1 0.6s;
-        -moz-animation: cd-bounce-1 0.6s;
-        animation: cd-bounce-1 0.6s;
-    }
 }
 
 #cd-timeline .cd-timeline-block .cd-timeline-content {
@@ -115,14 +69,6 @@
     text-decoration: underline;
 }
 
-@media only screen and (min-width: 1170px) {
-    #cd-timeline .cd-timeline-block .cd-timeline-content {
-        margin-left: 0;
-        padding: 1.6em;
-        width: 45%;
-    }
-}
-
 #cd-timeline .cd-timeline-block .cd-timeline-content:before {
     content: '';
     position: absolute;
@@ -132,15 +78,6 @@
     width: 0;
     border: 7px solid transparent;
     border-right: 7px solid #DA6E00;
-}
-
-@media only screen and (min-width: 1170px) {
-    #cd-timeline .cd-timeline-block .cd-timeline-content:before {
-        top: 24px;
-        left: 100%;
-        border-color: transparent;
-        border-left-color: #DA6E00;
-    }
 }
 
 #cd-timeline .cd-timeline-block .cd-timeline-content:after {
@@ -165,15 +102,51 @@
 }
 
 @media only screen and (min-width: 1170px) {
+    #cd-timeline:before {
+        left: 50%;
+        margin-left: -2px;
+    }
+    #cd-timeline .cd-timeline-block {
+        margin: 4em 0;
+    }
+    #cd-timeline .cd-timeline-block:first-child {
+        margin-top: 0;
+    }
+    #cd-timeline .cd-timeline-block:last-child {
+        margin-bottom: 0;
+    }
+    #cd-timeline .cd-timeline-block .cd-timeline-img {
+        width: 60px;
+        height: 60px;
+        left: 50%;
+        margin-left: -30px;
+    }
+    #cd-timeline .cd-timeline-block .cd-timeline-img.is-hidden {
+        visibility: hidden;
+    }
+    #cd-timeline .cd-timeline-block .cd-timeline-img.bounce-in {
+        visibility: visible;
+        -webkit-animation: cd-bounce-1 0.6s;
+        -moz-animation: cd-bounce-1 0.6s;
+        animation: cd-bounce-1 0.6s;
+    }
+    #cd-timeline .cd-timeline-block .cd-timeline-content {
+        margin-left: 0;
+        padding: 1.6em;
+        width: 45%;
+    }
+    #cd-timeline .cd-timeline-block .cd-timeline-content:before {
+        top: 24px;
+        left: 100%;
+        border-color: transparent;
+        border-left-color: #DA6E00;
+    }
     #cd-timeline .cd-timeline-block .cd-timeline-content .cd-date {
         position: absolute;
         width: 100%;
         left: 122%;
         top: 6px;
     }
-}
-
-@media only screen and (min-width: 1170px) {
     #cd-timeline .cd-timeline-block:nth-child(even) .cd-timeline-content {
         float: right;
     }
@@ -189,9 +162,6 @@
         right: 122%;
         text-align: right;
     }
-}
-
-@media only screen and (min-width: 1170px) {
     .cssanimations .cd-timeline-block .cd-timeline-content.is-hidden {
         visibility: hidden;
     }
