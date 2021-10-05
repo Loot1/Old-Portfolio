@@ -6,24 +6,26 @@ const skills = {
     languages: [
         {title:"HTML", level:3},
         {title:"CSS", level:2},
-        {title:"Java", level:1},
         {title:"JavaScript", level:3},
         {title:"Python", level:1},
+        {title:"Java", level:1},
         {title:"Shell", level:1},
-        {title:"Dart", level:0}
+        {title:"Dart", level:0},
     ],
     frameworks: [
         {title:"DiscordJS", level:3},
         {title:"NodeJS", level:2},
+        {title:"Bootstrap", level:1},
+        {title:"React", level:2},
         {title:"React-Native", level:3},
-        {title:"React", level:1},
-        {title:"Flutter", level:0}
+        {title:"Flutter", level:0},
     ],
     tools: [
-        {title:"Git", level:3},
         {title:"Visual Studio Code", level:3},
         {title:"Android Studio", level:2},
-        {title:"Expo", level:2}
+        {title:"Git", level:3},
+        {title:"Wordpress", level:1},
+        {title:"Expo", level:2},
     ]
 }
 
