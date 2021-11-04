@@ -345,10 +345,6 @@ body {
     color: #f5f5f5;
 }
 
-section {
-    padding-top: 20px
-}
-
 a:not(.nav-link) {
     color: #f5f5f5;
 }
@@ -366,7 +362,8 @@ a:not(.nav-link) {
     justify-content: center;
     color: #f5f5f5;
     display: flex;
-    margin: 7%;
+    margin-bottom: 5%;
+    margin-top: 12%;
 }
 
 .sectionTitle:before, .sectionTitle:after {

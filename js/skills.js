@@ -9,22 +9,20 @@ const skills = {
         {title:"JavaScript", level:3},
         {title:"Python", level:1},
         {title:"Java", level:1},
-        {title:"Shell", level:1},
-        {title:"Dart", level:0},
+        {title:"Shell", level:1}
     ],
     frameworks: [
         {title:"DiscordJS", level:3},
         {title:"NodeJS", level:2},
         {title:"Bootstrap", level:1},
         {title:"React", level:2},
-        {title:"React-Native", level:3},
-        {title:"Flutter", level:0},
+        {title:"React-Native", level:3}
     ],
     tools: [
         {title:"Visual Studio Code", level:3},
         {title:"Android Studio", level:2},
         {title:"Git", level:3},
-        {title:"Wordpress", level:1},
+        {title:"Wordpress", level:2},
         {title:"Expo", level:2},
     ]
 }
