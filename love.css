@@ -1,0 +1,21 @@
+body {
+    overflow:hidden;
+}
+
+#borne {
+    overflow-y:scroll;
+    overflow-x:hidden;
+    max-height:82vh;
+    margin-top:3.5vh;
+    border-style: solid;
+    border-color:black;
+    border-width: 40px;
+    border-radius: 50px;
+}
+
+@media only screen and (min-width: 576px) {
+    #borne {
+        max-height:85vh;
+        margin-top:2.5vh;
+    }
+}

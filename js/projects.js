@@ -13,7 +13,7 @@ const projects = [
         tags: ["React-Native", "Expo"],
         description: "Projet de formation visant à créer une application mobile vitrine pour un artisan local.\nJ'ai pour cela choisi Expérience Cordiste, une entreprise de Amiens spécialisée dans les travaux en hauteur.",
         repository: "https://gitlab.com/Loot1/experience-cordiste",
-        page:"cordiste.html"
+        page:"projets/experience-cordiste.html"
     },
     {
         image: "gitloot.webp",
