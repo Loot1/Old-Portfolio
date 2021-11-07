@@ -62,7 +62,7 @@ function pageDisplay(page) {
             <div class="col-12 col-sm-12 col-md-6 col-lg-4 col-xl-4 mt-4">
                 <div class="p-3 projectCard">
                     <div class="d-flex flex-row mb-3 align-items-center">
-                        <img src="img/projects/${project.image}" alt="Logo du projet ${project.name}"
+                        <img src="assets/img/projects/${project.image}" alt="Logo du projet ${project.name}"
                             width="70px" height="70px" class="rounded"/>
                         <div class="d-flex flex-column ml-3">
                             <p class="text-white h4">${project.name}</p>
