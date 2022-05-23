@@ -40,5 +40,12 @@ function themeIt() {
             element.classList.toggle("hover:text-white")
             element.classList.toggle("hover:text-gray-800")
         }
+        if(element.classList.contains("fa-sun")) {
+            element.classList.toggle("fa-sun")
+            element.classList.toggle("fa-moon")
+        } else if(element.classList.contains("fa-moon")) {
+            element.classList.toggle("fa-moon")
+            element.classList.toggle("fa-sun")
+        }
     }
 }
