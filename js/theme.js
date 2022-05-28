@@ -16,9 +16,11 @@ function changeTheme() {
             element.classList.toggle("hover:bg-gray-800")
             element.classList.toggle("hover:bg-white")
         }
-        if(element.classList.contains("hover:text-gray-800") || element.classList.contains("hover:text-white")) {
-            element.classList.toggle("hover:text-gray-800")
-            element.classList.toggle("hover:text-white")
+        if(!element.classList.contains("theme-ignore-text-hover")) {
+            if(element.classList.contains("hover:text-gray-800") || element.classList.contains("hover:text-white")) {
+                element.classList.toggle("hover:text-gray-800")
+                element.classList.toggle("hover:text-white")
+            }
         }
         if(element.classList.contains("fa-sun") || element.classList.contains("fa-moon")) {
             element.classList.toggle("fa-sun")
