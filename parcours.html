@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="fr">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -10,6 +11,7 @@
     <script src="libs/tailwind.js"></script>
     <script src="libs/fontawesome.js"></script>
 </head>
+
 <body class="font-mono bg-white relative lg:overflow-hidden lg:h-screen transition-colors duration-1000 theme">
     <div class="hidden md:block absolute -bottom-32 -left-32 w-96 h-96 z-40">
         <div class="absolute text-xl right-28 z-50 text-start top-1/4">
@@ -37,7 +39,7 @@
                         <a href="presentation.html" class="py-2 px-6 flex hover:text-amber-400">Présentation</a>
                         <a href="competences.html" class="py-2 px-6 flex hover:text-amber-400">Compétences</a>
                         <a href="projets.html" class="py-2 px-6 flex hover:text-amber-400">Projets</a>
-                        <a href="parcours.html" class="py-2 px-6 flex hover:text-amber-400">Parcours</a>
+                        <a href="parcours.html" class="active py-2 px-6 flex hover:text-amber-400">Parcours</a>
                         <a href="benevolat.html" class="py-2 px-6 flex hover:text-amber-400">Bénévolat</a>
                     </nav>
                     <button class="md:hidden flex flex-col ml-4" onclick="changeTheme()">
@@ -54,28 +56,87 @@
                 <li><a href="presentation.html" class="flex hover:text-amber-400 py-4 pl-4 sm:pl-16">Présentation</a></li>
                 <li><a href="competences.html" class="flex hover:text-amber-400 py-4 pl-4 sm:pl-16">Compétences</a></li>
                 <li><a href="projets.html" class="flex hover:text-amber-400 py-4 pl-4 sm:pl-16">Projets</a></li>
-                <li><a href="parcours.html" class="flex hover:text-amber-400 py-4 pl-4 sm:pl-16">Parcours</a></li>
+                <li class="active"><a href="parcours.html" class="flex hover:text-amber-400 py-4 pl-4 sm:pl-16">Parcours</a></li>
                 <li><a href="benevolat.html" class="flex hover:text-amber-400 py-4 pl-4 sm:pl-16">Bénévolat</a></li>
             </ul>
         </div>
-        <div class="flex relative z-20 items-center">
+        <div class="flex flex-col relative z-20 items-center mt-8">
+            <div class="flex flex-col items-center mb-8">
+                <h1 class="max-w-4xl text-4xl md:text-6xl font-bold mx-auto text-gray-800 text-center py-2 transition-colors duration-1000 theme">
+                    Parcours
+                </h1>
+            </div>
             <div class="container mx-auto px-6 flex flex-col justify-between items-center relative py-4">
-                <div class="flex flex-col">
-                    <a href="https://www.ecoles-supdecom.com/campus/amiens/" target="_blank">
-                        <img src="images/Logo-Sup-de-Com.png" alt="Logo de l'école SUP'de COM" class="w-42 mx-auto"/>
-                    </a>
-                    <h1 class="max-w-4xl text-4xl md:text-6xl font-bold mx-auto text-gray-800 text-center py-2 transition-colors duration-1000 theme">
-                        🔍 Recherche alternance en communication
-                    </h1>
-                    <p class="max-w-5xl text-2xl md:text-3xl my-6 text-center text-gray-800 transition-colors duration-1000 theme">
-                        Après une réussite au concours de l'école <a href="https://www.ecoles-supdecom.com/" target="_blank" class="text-amber-400">Sup'de COM à Amiens</a>, je suis à la recherche d'une alternance afin d'intégrer leur Mastère "Manager de la communication"
-                    </p>
-                    <div class="flex items-center justify-center bg-transparent text-gray-800 transition-colors duration-1000 theme">
-                        <a href="CV-de-Louis-SACHY.pdf" target="_blank" class="py-2 my-2 px-4 mt-8 md:my-10 border-2 border-gray-800 hover:border-amber-400 hover:bg-amber-400 hover:text-white theme-ignore-text-hover theme">
-                            <span class="uppercase text-md">
-                                Mon CV
-                            </span>
-                        </a>
+                <div class="grid lg:grid-cols-2 gap-4">
+                    <div class="bg-transparent p-4 md:p-6 border-2 border-gray-800 text-gray-800 transition-colors duration-1000 theme">
+                        <div class="flex flex-row">
+                            <img src="images/Logo-Anime-Mon-Web.jpg" alt="Logo de l'entreprise Anime Mon Web" class="w-1/3 md:w-1/2 object-contain">
+                            <div class="ml-4 md:ml-8">
+                                <h2 class="mb-2 text-2xl font-bold">Développeur - Anime Mon Web</h2>
+                                <p>📍 Full remote</p>
+                                <p>📅 2021 - aujourd'hui</p>
+                                <p>📃 Alternance</p>
+                            </div>
+                        </div>
+                        <p class="mt-4">Conception et développement d'applications au sein d'une agence de marketing digital</p>
+                    </div>
+                    <div class="flex bg-transparent p-4 md:p-6 border-2 border-gray-800 text-gray-800 transition-colors duration-1000 theme">
+                        <div class="flex flex-row">
+                            <img src="images/Logo-La-MANU.png" alt="Logo de l'école La MANU" class="w-1/3 md:w-1/2 object-contain">
+                            <div class="ml-4 md:ml-8">
+                                <h2 class="mb-2 text-2xl font-bold">Concepteur développeur d'applications</h2>
+                                <p>📍 Amiens</p>
+                                <p>📅 2021 - aujourd'hui</p>
+                                <p>📃 Titre professionnel en alternance</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="bg-transparent p-4 md:p-6 border-2 border-gray-800 text-gray-800 transition-colors duration-1000 theme">
+                        <div class="flex flex-row">
+                            <img src="images/Logo-La-MANU.png" alt="Logo de l'école La MANU" class="w-1/3 md:w-1/2 object-contain">
+                            <div class="ml-4 md:ml-8">
+                                <h2 class="mb-2 text-2xl font-bold">Développeur d'applications mobiles</h2>
+                                <p>📍 Amiens</p>
+                                <p>📅 2021</p>
+                                <p>📃 Préparation Opérationnelle à l'Emploi Collective</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="bg-transparent p-4 md:p-6 border-2 border-gray-800 text-gray-800 transition-colors duration-1000 theme">
+                        <div class="flex flex-row">
+                            <img src="images/Logo-Croix-Rouge-Française.jpg" alt="Logo de la Croix-Rouge française" class="w-1/3 md:w-1/2 object-contain">
+                            <div class="ml-4 md:ml-8">
+                                <h2 class="mb-2 text-2xl font-bold">Volontaire - Croix-Rouge française</h2>
+                                <p>📍 Amiens</p>
+                                <p>📅 2021</p>
+                                <p>📃 Service Civique</p>
+                            </div>
+                        </div>
+                        <p class="mt-4">Service civique dans la formation aux premiers secours et l'action sociale</p>
+                    </div>
+                    <div class="bg-transparent p-4 md:p-6 border-2 border-gray-800 text-gray-800 transition-colors duration-1000 theme">
+                        <div class="flex flex-row">
+                            <img src="images/Logo-CHU-Amiens.png" alt="Logo du CHU d'Amiens" class="w-1/3 md:w-1/2 object-contain">
+                            <div class="ml-4 md:ml-8">
+                                <h2 class="mb-2 text-2xl font-bold">Élève infirmier</h2>
+                                <p>📍 Amiens</p>
+                                <p>📅 2020</p>
+                                <p>📃 Stage</p>
+                            </div>
+                        </div>
+                        <p class="mt-4">Stage professionnel en service de chrirugie</p>
+                    </div>
+                    <div class="bg-transparent p-4 md:p-6 border-2 border-gray-800 text-gray-800 transition-colors duration-1000 theme">
+                        <div class="flex flex-row">
+                            <img src="images/Logo-Lycée-Georges-Brassens.png" alt="Logo du lycée Georges Brassens de Neufchâtel-en-Bray" class="w-1/3 md:w-1/2 object-contain">
+                            <div class="ml-4 md:ml-8">
+                                <h2 class="mb-2 text-2xl font-bold">Baccalauréat scientifique</h2>
+                                <p>📍 Neufchâtel-en-Bray</p>
+                                <p>📅 2019-2020</p>
+                                <p>📃 Baccalauréat</p>
+                            </div>
+                        </div>
+                        <p class="mt-4">Option Informatique et Sciences du Numérique & Langues et Cultures de l'Antiquité (Latin)</p>
                     </div>
                 </div>
             </div>
@@ -105,4 +166,5 @@
         </footer>
     </main>
 </body>
+
 </html>
