@@ -1,0 +1,309 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="js/navbar.js"></script>
+    <script src="js/theme.js"></script>
+    <script src="libs/tailwind.js"></script>
+    <script src="libs/fontawesome.js"></script>
+</head>
+
+<body class="font-mono bg-white relative lg:overflow-hidden lg:h-screen transition-colors duration-1000 theme">
+    <div class="hidden md:block absolute -bottom-32 -left-32 w-96 h-96 z-40">
+        <div class="absolute text-xl right-28 z-50 text-start top-1/4">
+            <span class="text-7xl align-self">🎨</span>
+            <p class="pt-4 text-center pb-2">Thème</p>
+            <div class="flex justify-center">
+                <div class="relative inline-block w-10 mr-2 align-middle select-none" id="test">
+                    <input type="checkbox" name="themeToggle" id="themeToggle" onchange="changeTheme()" class="checked:bg-gray-800 outline-none focus:outline-none right-4 checked:right-0 duration-200 ease-in absolute block w-6 h-6 rounded-full bg-white border-4 appearance-none cursor-pointer"/>
+                    <label for="themeToggle" class="block overflow-hidden h-6 rounded-full bg-gray-300 cursor-pointer"></label>
+                </div>
+            </div>
+        </div>
+        <svg viewBox="0 0 200 200" class="absolute w-full h-full" xmlns="http://www.w3.org/2000/svg">
+            <path fill="#FFC83D" d="M44.7,-76.4C58.8,-69.2,71.8,-59.1,79.6,-45.8C87.4,-32.6,90,-16.3,88.5,-0.9C87,14.6,81.4,29.2,74.1,43.2C66.7,57.2,57.6,70.6,45,78.1C32.4,85.6,16.2,87.1,0.7,85.9C-14.8,84.7,-29.6,80.9,-43.9,74.4C-58.3,67.9,-72,58.7,-79.8,45.9C-87.7,33,-89.5,16.5,-88.9,0.3C-88.4,-15.9,-85.4,-31.7,-78.1,-45.4C-70.8,-59.1,-59.1,-70.6,-45.3,-77.9C-31.6,-85.3,-15.8,-88.5,-0.3,-88.1C15.3,-87.6,30.5,-83.5,44.7,-76.4Z" transform="translate(100 100)"/>
+        </svg>
+    </div>
+    <main class="overflow-auto h-full">
+        <header class="h-24 sm:h-32 flex items-center z-30 w-full">
+            <div class="container mx-auto px-6 flex items-center justify-between">
+                <div class="uppercase text-gray-800 font-black text-3xl flex items-center transition-colors duration-1000 theme">
+                    <a href="index.html" class="text-3xl ml-3 mt-1 hover:text-amber-400">Louis SACHY</a>
+                </div>
+                <div class="flex items-center">
+                    <nav class="font-sen text-gray-800 uppercase text-lg md:flex items-center hidden transition-colors duration-1000 theme">
+                        <a href="presentation.html" class="py-2 px-6 flex hover:text-amber-400">Présentation</a>
+                        <a href="competences.html" class="py-2 px-6 flex hover:text-amber-400">Compétences</a>
+                        <a href="projets.html" class="py-2 px-6 flex hover:text-amber-400">Projets</a>
+                        <a href="parcours.html" class="py-2 px-6 flex hover:text-amber-400">Parcours</a>
+                        <a href="benevolat.html" class="py-2 px-6 flex hover:text-amber-400">Bénévolat</a>
+                    </nav>
+                    <button class="md:hidden flex flex-col ml-4" onclick="changeTheme()">
+                        <i id="themeIcon" class="fa-solid fa-sun text-gray-800 hover:text-amber-400 text-3xl transition-colors duration-1000 theme"></i>
+                    </button>
+                    <button class="md:hidden flex flex-col ml-4" onclick="toggleNavbar()">
+                        <i class="fas fa-bars-staggered text-gray-800 hover:text-amber-400 text-3xl transition-colors duration-1000 theme"></i>
+                    </button>
+                </div>
+            </div>
+        </header>
+        <div class="hidden pb-4 md:hidden md:pb-0" id="mobile-menu">
+            <ul class="font-sen text-gray-800 uppercase text-md md:flex items-center transition-colors duration-1000 theme">
+                <li><a href="presentation.html" class="flex hover:text-amber-400 py-4 pl-4 sm:pl-16">Présentation</a></li>
+                <li><a href="competences.html" class="flex hover:text-amber-400 py-4 pl-4 sm:pl-16">Compétences</a></li>
+                <li><a href="projets.html" class="flex hover:text-amber-400 py-4 pl-4 sm:pl-16">Projets</a></li>
+                <li><a href="parcours.html" class="flex hover:text-amber-400 py-4 pl-4 sm:pl-16">Parcours</a></li>
+                <li><a href="benevolat.html" class="flex hover:text-amber-400 py-4 pl-4 sm:pl-16">Bénévolat</a></li>
+            </ul>
+        </div>
+        <div class="flex flex-col relative z-20 items-center mt-8">
+            <h1 class="max-w-4xl text-4xl md:text-6xl font-bold text-gray-800 text-center py-2 transition-colors duration-1000 theme">
+                Compétences
+            </h1>
+            <div class="container px-6 flex flex-col justify-between items-center relative py-4">
+                <div class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 xl:grid-cols-5 2xl:grid-cols-6 gap-4" name="seeder">
+                    <h2 class="self-start mt-8 max-w-5xl text-2xl md:text-3xl text-gray-800 py-2 col-span-2 sm:col-span-3 md:col-span-4 xl:col-span-5 2xl:col-span-6 transition-colors duration-1000 theme">
+                        Langages
+                    </h2>
+                    <div class="flex flex-col items-center bg-transparent p-4 md:p-6 border-2 border-gray-800 text-gray-800 transition-colors duration-1000 theme">
+                        <img src="images/skills/html.png" alt="Logo du framework React" class="w-4/5 object-contain">
+                        <h2 class="text-center my-2 text-2xl font-bold">HTML</h2>
+                        <div class="w-5/6 h-4 text-center text-xs text-white bg-green-700 rounded-full">
+                            Maîtrise
+                        </div>
+                    </div>
+                    <div class="flex flex-col items-center bg-transparent p-4 md:p-6 border-2 border-gray-800 text-gray-800 transition-colors duration-1000 theme">
+                        <img src="images/skills/css.png" alt="Logo du framework React" class="w-4/5 object-contain">
+                        <h2 class="text-center my-2 text-2xl font-bold">CSS</h2>
+                        <div class="w-5/6 h-4 text-center text-xs text-white bg-green-700 rounded-full">
+                            Maîtrise
+                        </div>
+                    </div>
+                    <div class="flex flex-col items-center bg-transparent p-4 md:p-6 border-2 border-gray-800 text-gray-800 transition-colors duration-1000 theme">
+                        <img src="images/skills/javascript.png" alt="Logo du framework React" class="w-4/5 object-contain">
+                        <h2 class="text-center my-2 text-2xl font-bold">JavaScript</h2>
+                        <div class="w-5/6 h-4 text-center text-xs text-white bg-green-700 rounded-full">
+                            Maîtrise
+                        </div>
+                    </div>
+                    <div class="flex flex-col items-center bg-transparent p-4 md:p-6 border-2 border-gray-800 text-gray-800 transition-colors duration-1000 theme">
+                        <img src="images/skills/typescript.png" alt="Logo du framework React" class="w-4/5 object-contain">
+                        <h2 class="text-center my-2 text-2xl font-bold">TypeScript</h2>
+                        <div class="w-5/6 h-4 text-center text-xs text-white bg-orange-400 rounded-full">
+                            Intermédiaire
+                        </div>
+                    </div>
+                    <div class="flex flex-col items-center bg-transparent p-4 md:p-6 border-2 border-gray-800 text-gray-800 transition-colors duration-1000 theme">
+                        <img src="images/skills/python.png" alt="Logo du framework React" class="w-4/5 object-contain">
+                        <h2 class="text-center my-2 text-2xl font-bold">Python</h2>
+                        <div class="w-5/6 h-4 text-center text-xs text-white bg-orange-400 rounded-full">
+                            Intermédiaire
+                        </div>
+                    </div>
+                    <div class="flex flex-col items-center bg-transparent p-4 md:p-6 border-2 border-gray-800 text-gray-800 transition-colors duration-1000 theme">
+                        <img src="images/skills/java.png" alt="Logo du framework React" class="w-4/5 object-contain">
+                        <h2 class="text-center my-2 text-2xl font-bold">Java</h2>
+                        <div class="w-5/6 h-4 text-center text-xs text-white bg-orange-400 rounded-full">
+                            Intermédiaire
+                        </div>
+                    </div>
+                    <div class="flex flex-col items-center bg-transparent p-4 md:p-6 border-2 border-gray-800 text-gray-800 transition-colors duration-1000 theme">
+                        <img src="images/skills/react.png" alt="Logo du framework React" class="w-4/5 object-contain">
+                        <h2 class="text-center my-2 text-2xl font-bold">Shell</h2>
+                        <div class="w-5/6 h-4 text-center text-xs text-white bg-orange-400 rounded-full">
+                            Intermédiaire
+                        </div>
+                    </div>
+                    <h2 class="self-start mt-8 max-w-5xl text-2xl md:text-3xl text-gray-800 py-2 col-span-2 sm:col-span-3 md:col-span-4 xl:col-span-5 2xl:col-span-6 transition-colors duration-1000 theme">
+                        Frameworks / Librairies
+                    </h2>
+                    <div class="flex flex-col items-center bg-transparent p-4 md:p-6 border-2 border-gray-800 text-gray-800 transition-colors duration-1000 theme">
+                        <img src="images/skills/sass.png" alt="Logo du framework React" class="w-4/5 object-contain">
+                        <h2 class="text-center my-2 text-2xl font-bold">Sass</h2>
+                        <div class="w-5/6 h-4 text-center text-xs text-white bg-orange-400 rounded-full">
+                            Intermédiaire
+                        </div>
+                    </div>
+                    <div class="flex flex-col items-center bg-transparent p-4 md:p-6 border-2 border-gray-800 text-gray-800 transition-colors duration-1000 theme">
+                        <img src="images/skills/bootstrap.png" alt="Logo du framework React" class="w-4/5 object-contain">
+                        <h2 class="text-center my-2 text-2xl font-bold">Bootstrap</h2>
+                        <div class="w-5/6 h-4 text-center text-xs text-white bg-green-700 rounded-full">
+                            Maîtrise
+                        </div>
+                    </div>
+                    <div class="flex flex-col items-center bg-transparent p-4 md:p-6 border-2 border-gray-800 text-gray-800 transition-colors duration-1000 theme">
+                        <img src="images/skills/tailwindcss.png" alt="Logo du framework React" class="w-4/5 object-contain">
+                        <h2 class="text-center my-2 text-2xl font-bold">TailwindCSS</h2>
+                        <div class="w-5/6 h-4 text-center text-xs text-white bg-green-700 rounded-full">
+                            Maîtrise
+                        </div>
+                    </div>
+                    <div class="flex flex-col items-center bg-transparent p-4 md:p-6 border-2 border-gray-800 text-gray-800 transition-colors duration-1000 theme">
+                        <img src="images/skills/jquery.png" alt="Logo du framework React" class="w-4/5 object-contain">
+                        <h2 class="text-center my-2 text-2xl font-bold">jQuery</h2>
+                        <div class="w-5/6 h-4 text-center text-xs text-white bg-orange-400 rounded-full">
+                            Intermédiaire
+                        </div>
+                    </div>
+                    <div class="flex flex-col items-center bg-transparent p-4 md:p-6 border-2 border-gray-800 text-gray-800 transition-colors duration-1000 theme">
+                        <img src="images/skills/discordjs.png" alt="Logo du framework React" class="w-4/5 object-contain">
+                        <h2 class="text-center my-2 text-2xl font-bold">Discord.js</h2>
+                        <div class="w-5/6 h-4 text-center text-xs text-white bg-green-700 rounded-full">
+                            Maîtrise
+                        </div>
+                    </div>
+                    <div class="flex flex-col items-center bg-transparent p-4 md:p-6 border-2 border-gray-800 text-gray-800 transition-colors duration-1000 theme">
+                        <img src="images/skills/react.png" alt="Logo du framework React" class="w-4/5 object-contain">
+                        <h2 class="text-center my-2 text-2xl font-bold">React.js</h2>
+                        <div class="w-5/6 h-4 text-center text-xs text-white bg-green-700 rounded-full">
+                            Maîtrise
+                        </div>
+                    </div>
+                    <div class="flex flex-col items-center bg-transparent p-4 md:p-6 border-2 border-gray-800 text-gray-800 transition-colors duration-1000 theme">
+                        <img src="images/skills/react.png" alt="Logo du framework React" class="w-4/5 object-contain">
+                        <h2 class="text-center my-2 text-2xl font-bold">React-Native</h2>
+                        <div class="w-5/6 h-4 text-center text-xs text-white bg-green-700 rounded-full">
+                            Maîtrise
+                        </div>
+                    </div>
+                    <div class="flex flex-col items-center bg-transparent p-4 md:p-6 border-2 border-gray-800 text-gray-800 transition-colors duration-1000 theme">
+                        <img src="images/skills/expo.png" alt="Logo du framework React" class="w-4/5 object-contain">
+                        <h2 class="text-center my-2 text-2xl font-bold">Expo</h2>
+                        <div class="w-5/6 h-4 text-center text-xs text-white bg-green-700 rounded-full">
+                            Maîtrise
+                        </div>
+                    </div>
+                    <div class="flex flex-col items-center bg-transparent p-4 md:p-6 border-2 border-gray-800 text-gray-800 transition-colors duration-1000 theme">
+                        <img src="images/skills/redux.png" alt="Logo du framework React" class="w-4/5 object-contain">
+                        <h2 class="text-center my-2 text-2xl font-bold">Redux.js</h2>
+                        <div class="w-5/6 h-4 text-center text-xs text-white bg-orange-400 rounded-full">
+                            Intermédiaire
+                        </div>
+                    </div>
+                    <div class="flex flex-col items-center bg-transparent p-4 md:p-6 border-2 border-gray-800 text-gray-800 transition-colors duration-1000 theme">
+                        <img src="images/skills/nodejs.png" alt="Logo du framework React" class="w-4/5 object-contain">
+                        <h2 class="text-center my-2 text-2xl font-bold">Node.js</h2>
+                        <div class="w-5/6 h-4 text-center text-xs text-white bg-blue-500 rounded-full">
+                            Avancé
+                        </div>
+                    </div>
+                    <div class="flex flex-col items-center bg-transparent p-4 md:p-6 border-2 border-gray-800 text-gray-800 transition-colors duration-1000 theme">
+                        <img src="images/skills/express.png" alt="Logo du framework React" class="w-4/5 object-contain">
+                        <h2 class="text-center my-2 text-2xl font-bold">Express.js</h2>
+                        <div class="w-5/6 h-4 text-center text-xs text-white bg-orange-400 rounded-full">
+                            Intermédiaire
+                        </div>
+                    </div>
+                    <div class="flex flex-col items-center bg-transparent p-4 md:p-6 border-2 border-gray-800 text-gray-800 transition-colors duration-1000 theme">
+                        <img src="images/skills/nestjs.png" alt="Logo du framework React" class="w-4/5 object-contain">
+                        <h2 class="text-center my-2 text-2xl font-bold">Nest.js</h2>
+                        <div class="w-5/6 h-4 text-center text-xs text-white bg-orange-400 rounded-full">
+                            Intermédiaire
+                        </div>
+                    </div>
+                    <h2 class="self-start mt-8 max-w-5xl text-2xl md:text-3xl text-gray-800 py-2 col-span-2 sm:col-span-3 md:col-span-4 xl:col-span-5 2xl:col-span-6 transition-colors duration-1000 theme">
+                        Outils de développement
+                    </h2>
+                    <div class="flex flex-col items-center bg-transparent p-4 md:p-6 border-2 border-gray-800 text-gray-800 transition-colors duration-1000 theme">
+                        <img src="images/skills/wordpress.png" alt="Logo du framework React" class="w-4/5 object-contain">
+                        <h2 class="text-center my-2 text-2xl font-bold">Wordpress</h2>
+                    </div>
+                    <div class="flex flex-col items-center bg-transparent p-4 md:p-6 border-2 border-gray-800 text-gray-800 transition-colors duration-1000 theme">
+                        <img src="images/skills/vscode.png" alt="Logo du framework React" class="w-4/5 object-contain">
+                        <h2 class="text-center my-2 text-2xl font-bold">Visual Studio Code</h2>
+                    </div>
+                    <div class="flex flex-col items-center bg-transparent p-4 md:p-6 border-2 border-gray-800 text-gray-800 transition-colors duration-1000 theme">
+                        <img src="images/skills/androidstudio.png" alt="Logo du framework React" class="w-4/5 object-contain">
+                        <h2 class="text-center my-2 text-2xl font-bold">Android Studio</h2>
+                    </div>
+                    <div class="flex flex-col items-center bg-transparent p-4 md:p-6 border-2 border-gray-800 text-gray-800 transition-colors duration-1000 theme">
+                        <img src="images/skills/eclipse.png" alt="Logo du framework React" class="w-4/5 object-contain">
+                        <h2 class="text-center my-2 text-2xl font-bold">Eclipse</h2>
+                    </div>
+                    <div class="flex flex-col items-center bg-transparent p-4 md:p-6 border-2 border-gray-800 text-gray-800 transition-colors duration-1000 theme">
+                        <img src="images/skills/adobexd.png" alt="Logo du framework React" class="w-4/5 object-contain">
+                        <h2 class="text-center my-2 text-2xl font-bold">AdobeXD</h2>
+                    </div>
+                    <div class="flex flex-col items-center bg-transparent p-4 md:p-6 border-2 border-gray-800 text-gray-800 transition-colors duration-1000 theme">
+                        <img src="images/skills/figma.png" alt="Logo du framework React" class="w-4/5 object-contain">
+                        <h2 class="text-center my-2 text-2xl font-bold">Figma</h2>
+                    </div>
+                    <div class="flex flex-col items-center bg-transparent p-4 md:p-6 border-2 border-gray-800 text-gray-800 transition-colors duration-1000 theme">
+                        <img src="images/skills/trello.png" alt="Logo du framework React" class="w-4/5 object-contain">
+                        <h2 class="text-center my-2 text-2xl font-bold">Trello</h2>
+                    </div>
+                    <div class="flex flex-col items-center bg-transparent p-4 md:p-6 border-2 border-gray-800 text-gray-800 transition-colors duration-1000 theme">
+                        <img src="images/skills/notion.png" alt="Logo du framework React" class="w-4/5 object-contain">
+                        <h2 class="text-center my-2 text-2xl font-bold">Notion</h2>
+                    </div>
+                    <div class="flex flex-col items-center bg-transparent p-4 md:p-6 border-2 border-gray-800 text-gray-800 transition-colors duration-1000 theme">
+                        <img src="images/skills/filezilla.png" alt="Logo du framework React" class="w-4/5 object-contain">
+                        <h2 class="text-center my-2 text-2xl font-bold">FileZilla</h2>
+                    </div>
+                    <div class="flex flex-col items-center bg-transparent p-4 md:p-6 border-2 border-gray-800 text-gray-800 transition-colors duration-1000 theme">
+                        <img src="images/skills/npm.png" alt="Logo du framework React" class="w-4/5 object-contain">
+                        <h2 class="text-center my-2 text-2xl font-bold">npm</h2>
+                    </div>
+                    <h2 class="self-start mt-8 max-w-5xl text-2xl md:text-3xl text-gray-800 py-2 col-span-2 sm:col-span-3 md:col-span-4 xl:col-span-5 2xl:col-span-6 transition-colors duration-1000 theme">
+                        Bases de données
+                    </h2>
+                    <div class="flex flex-col items-center bg-transparent p-4 md:p-6 border-2 border-gray-800 text-gray-800 transition-colors duration-1000 theme">
+                        <img src="images/skills/firebase.png" alt="Logo du framework React" class="w-4/5 object-contain">
+                        <h2 class="text-center my-2 text-2xl font-bold">Firebase</h2>
+                    </div>
+                    <div class="flex flex-col items-center bg-transparent p-4 md:p-6 border-2 border-gray-800 text-gray-800 transition-colors duration-1000 theme">
+                        <img src="images/skills/mongodb.png" alt="Logo du framework React" class="w-4/5 object-contain">
+                        <h2 class="text-center my-2 text-2xl font-bold">MongoDB</h2>
+                    </div>
+                    <div class="flex flex-col items-center bg-transparent p-4 md:p-6 border-2 border-gray-800 text-gray-800 transition-colors duration-1000 theme">
+                        <img src="images/skills/mysql.png" alt="Logo du framework React" class="w-4/5 object-contain">
+                        <h2 class="text-center my-2 text-2xl font-bold">MySQL</h2>
+                    </div>
+                    <h2 class="self-start mt-8 max-w-5xl text-2xl md:text-3xl text-gray-800 py-2 col-span-2 sm:col-span-3 md:col-span-4 xl:col-span-5 2xl:col-span-6 transition-colors duration-1000 theme">
+                        Interpersonnelles
+                    </h2>
+                </div>
+            </div>
+        </div>
+        <script>
+            //     tools: [
+            //         {title:"Visual Studio Code", image:"react.png", level:3},
+            //         {title:"Android Studio", image:"react.png", level:2},
+            //         {title:"Git", image:"react.png", level:3},
+            //         {title:"Wordpress", image:"react.png", level:2},
+            //         {title:"Expo", image:"react.png", level:2},
+            //         {title:"Expo", image:"react.png", level:2}
+            //     ]
+            // }
+        </script>
+        <footer class="w-full py-8">
+            <div class="max-w-screen-xl mx-auto px-4">
+                <div class="pt-8 flex max-w-xs mx-auto items-center justify-between">
+                    <a href="mailto:louisachy@icloud.com" class="text-gray-800 transition-colors duration-1000 hover:transition-none theme">
+                        <i class="fas fa-envelope text-2xl pr-8 hover:text-amber-400"></i>
+                    </a>
+                    <a href="https://www.linkedin.com/in/louis-sachy/" target="_blank" class="text-gray-800 transition-colors duration-1000 hover:transition-none theme">
+                        <i class="fab fa-linkedin-in text-2xl pr-8 hover:text-amber-400"></i>
+                    </a>
+                    <a href="https://github.com/Loot1" target="_blank" class="text-gray-800 transition-colors duration-1000 theme">
+                        <i class="fab fa-github text-2xl pr-8 hover:text-amber-400"></i>
+                    </a>
+                    <a href="https://gitlab.com/Loot1" target="_blank" class="text-gray-800 transition-colors duration-1000 hover:transition-none theme">
+                        <i class="fab fa-gitlab text-2xl hover:text-amber-400"></i>
+                    </a>
+                </div>
+                <div class="text-center text-gray-800 pt-10 sm:pt-12 font-light flex items-center justify-center transition-colors duration-1000 theme">
+                    <span>Développé par 
+                        <a href="https://www.linkedin.com/in/louis-sachy/" target="_blank" class="underline hover:text-amber-400"> Louis Sachy</a>
+                    </span>
+                </div>
+            </div>
+        </footer>
+    </main>
+</body>
+
+</html>
