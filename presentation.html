@@ -1,12 +1,18 @@
 <!DOCTYPE html>
 <html lang="fr">
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta charset="utf-8"/>
+    <meta name="author" content="Louis Sachy, louisachy@icloud.com">
+    <meta name="description" content="Je m'appelle Louis SACHY et ce site constitue mon CV numérique. Cette page me présente et parle de mes passions."/>
+    <meta name="keywords" content="louis sachy, développeur, louis, amiens, développeur amiens, louis amiens, développeur mobile, louis sachy amiens, développeur mobile louis sachy"/>
+    <meta name="language" content="fr-FR">
+    <meta name="robots" content="index,follow"/>
+    <meta name="subject" content="Présentation de Louis Sachy">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Louis SACHY - Présentation</title>
     <script src="js/navbar.js"></script>
     <script src="js/theme.js"></script>
+    <script src="js/age.js"></script>
     <script src="libs/tailwind.js"></script>
     <script src="libs/fontawesome.js"></script>
 </head>
@@ -63,10 +69,10 @@
                 <div class="flex flex-col items-center">
                     <img src="images/me.jpg" alt="Photo de moi regardant la tour Eiffel" class="rounded-full w-40 mx-auto"/>
                     <h1 class="max-w-4xl text-4xl md:text-6xl font-bold text-gray-800 text-center pb-2 pt-6 transition-colors duration-1000 theme">
-                        Présentation
+                        👋 Présentation
                     </h1>
-                    <p class="max-w-5xl text-2xl md:text-3xl mt-6 text-center text-gray-800 transition-colors duration-1000 theme">
-                        Louis, 20 ans, amiénois, développeur autodidacte depuis mes 12 ans. Passionné du monde du numérique, je m'apprête maintenant à continuer mon parcours en communication 📣
+                    <p class="max-w-5xl text-2xl md:text-3xl mt-6 text-center text-gray-800 transition-colors duration-1000 theme" id="age">
+                        Louis, %age%, amiénois, développeur autodidacte depuis mes 12 ans. Passionné du monde du numérique, je m'apprête maintenant à continuer mon parcours en communication 📣
                     </p>
                     <div class="flex items-center justify-center bg-transparent text-gray-800 transition-colors duration-1000 theme">
                         <a href="parcours.html" class="py-2 my-2 px-4 mt-8 md:my-10 border-2 border-gray-800 hover:border-amber-400 hover:bg-amber-400 hover:text-white theme-ignore-text-hover theme">
