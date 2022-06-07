@@ -27,7 +27,7 @@ const projects = [
         name: "Justice",
         tags: ["DiscordJS"],
         description: "Bot Discord entretenant une liste d'utilisateurs dites liste noire avec un comportement inapproprié sur l'application.\nCe projet a été l'occasion pour moi de me pencher davantage sur le système de gestion de fichiers de NodeJS et d'apprendre à mieux connaître la librairie DiscordJS.",
-        repository: "https://gitlab.com/Loot1/justice",
+        repository: "https://gitlab.com/Loot1/justice-bot",
     },
     {
         image: "anonyme.webp",
