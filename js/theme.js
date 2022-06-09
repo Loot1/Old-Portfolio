@@ -28,10 +28,11 @@ function changeTheme() {
         }
     }
     if(document.getElementById("themeIcon").classList.contains("fa-sun") && localStorage.getItem("theme") == 'dark') localStorage.removeItem("theme")
-    else if(localStorage.getItem("theme") === null) localStorage.setItem("theme", 'dark')
+    else if(!localStorage.getItem("theme")) localStorage.setItem("theme", 'dark')
 }
 
 window.onload = () => {
+    console.log(localStorage.getItem("theme"))
     if(localStorage.getItem("theme") == 'dark') {
         changeTheme()
         document.getElementById("themeToggle").checked = true

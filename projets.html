@@ -1,22 +1,24 @@
 <!DOCTYPE html>
 <html lang="fr">
+
 <head>
     <meta charset="utf-8" />
     <meta name="author" content="Louis Sachy, louisachy@icloud.com">
     <meta name="description"
-        content="Je m'appelle Louis SACHY et ce site constitue mon CV numérique. Cette page retrace mon parcours professionnel mettant en avance mon expérience." />
+        content="Je m'appelle Louis SACHY et ce site constitue mon CV numérique. Vous pourrez en apprendre davantage sur les projets que j'ai réalisé sur cette page." />
     <meta name="keywords"
         content="louis sachy, développeur, louis, amiens, développeur amiens, louis amiens, développeur mobile, louis sachy amiens, développeur mobile louis sachy" />
     <meta name="language" content="fr-FR">
     <meta name="robots" content="index,follow" />
-    <meta name="subject" content="Parcours professionnel de Louis Sachy">
+    <meta name="subject" content="Projets de Louis Sachy">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Louis SACHY - Parcours</title>
+    <title>Louis SACHY - Projets</title>
     <script src="js/navbar.js"></script>
     <script src="js/theme.js"></script>
     <script src="libs/tailwind.js"></script>
     <script src="libs/fontawesome.js"></script>
 </head>
+
 <body class="font-mono bg-white relative lg:overflow-hidden lg:h-screen transition-colors duration-1000 theme">
     <div class="hidden md:block absolute -bottom-32 -left-32 w-96 h-96 z-40">
         <div class="absolute text-xl right-28 z-50 text-start top-1/4">
@@ -55,7 +57,7 @@
                     </nav>
                     <button class="md:hidden flex flex-col ml-4" onclick="changeTheme()">
                         <i id="themeIcon"
-                            class="fa-solid fa-sun text-gray-800 hover:text-amber-400 text-3xltransition transition-colors duration-1000 theme"></i>
+                            class="fa-solid fa-sun text-gray-800 hover:text-amber-400 text-3xl transition-colors duration-1000 theme"></i>
                     </button>
                     <button class="md:hidden flex flex-col ml-4" onclick="toggleNavbar()">
                         <i
@@ -67,8 +69,7 @@
         <div class="hidden pb-4 md:hidden md:pb-0" id="mobile-menu">
             <ul
                 class="font-sen text-gray-800 uppercase text-md md:flex items-center transition-colors duration-1000 theme">
-                <li><a href="presentation.html" class="flex hover:text-amber-400 py-4 pl-4 sm:pl-16">Présentation</a>
-                </li>
+                <li><a href="presentation.html" class="flex hover:text-amber-400 py-4 pl-4 sm:pl-16">Présentation</a></li>
                 <li><a href="competences.html" class="flex hover:text-amber-400 py-4 pl-4 sm:pl-16">Compétences</a></li>
                 <li><a href="projets.html" class="flex hover:text-amber-400 py-4 pl-4 sm:pl-16">Projets</a></li>
                 <li><a href="parcours.html" class="flex hover:text-amber-400 py-4 pl-4 sm:pl-16">Parcours</a></li>
@@ -80,33 +81,217 @@
                 class="max-w-4xl text-4xl md:text-6xl font-bold text-gray-800 text-center py-2 transition-colors duration-1000 theme">
                 🧾 Projets
             </h1>
-            <div class="container px-6 flex flex-col justify-between items-center relative py-4 mt-8">
-                <table class="table-auto border-2 border-gray-800 border-collapse transition-colors duration-1000 theme">
-                    <thead class="border-2">
-                        <tr class="border-2 text-white">
-                            <th class="border-2">Song</th>
-                            <th class="border-2">Artist</th>
-                            <th class="border-2">Year</th>
-                        </tr>
-                    </thead>
-                    <tbody>
-                        <tr class="border-2 text-white">
-                            <td class="border-2">The Slidingghjkgh fjhk hdg dhqsdf iuaSDHFA9SQDHFG OAIHGAOIFEDGHJ AOEFIDJGHZO SDFIJGAPEOFI jdghj fgj hgf fgjhj fg jhfgh jfghj fhgjdfhgd hj dhjghjfghj fghjf ghjfgh hfgjfgh jfgh jgf  hjfgh jhg Mr. Bones (Next Stop, Pottersville)</td>
-                            <td class="border-2">Malcolm Lockyer</td>
-                            <td class="border-2">1961</td>
-                        </tr>
-                        <tr class="border-2 text-white">
-                            <td class="border-2">Witchy Woman</td>
-                            <td class="border-2">The Eagles</td>
-                            <td class="border-2">1972</td>
-                        </tr>
-                        <tr class="border-2 text-white">
-                            <td class="border-2">Shining Star</td>
-                            <td class="border-2">Earth, Wind, and Fire</td>
-                            <td class="border-2">1975</td>
-                        </tr>
-                    </tbody>
-                </table>
+            <div class="container mx-auto px-6 flex flex-col justify-between items-center relative py-4 mt-8">
+                <div class="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-4">
+
+                    <div class="flex flex-col bg-transparent p-4 md:p-6 border-2 border-gray-800 text-gray-800 transition-colors duration-1000 theme">
+                        <div class="flex flex-row items-center justify-between">
+                            <div class="mr-4 md:mr-8">
+                                <h2 class="mb-2 text-2xl font-bold">Météo</h2>
+                                <p>📱 Application mobile</p>
+                            </div>
+                            <img src="images/projects/meteo.jpg" alt="Logo du projet Averyl" class="w-1/4 object-contain rounded">
+                        </div>
+                        <p class="mt-6 mb-4">TODO</p>
+                        <div class="flex flex-row justify-center">
+                            <div class="flex items-center justify-center bg-transparent text-gray-800 transition-colors duration-1000 theme">
+                                <a href="https://gitlab.com/Loot1/meteo" target="_blank" class="py-2 my-2 px-4 border-2 border-gray-800 hover:border-amber-400 hover:bg-amber-400 hover:text-white theme-ignore-text-hover theme">
+                                    <span class="uppercase text-md">
+                                        Github
+                                    </span>
+                                </a>
+                            </div>
+                            <div class="flex items-center justify-center ml-10 bg-transparent text-gray-800 transition-colors duration-1000 theme">
+                                <a href="https://loot1.github.io/Cupidon" target="_blank" class="py-2 my-2 px-4 border-2 border-gray-800 hover:border-amber-400 hover:bg-amber-400 hover:text-white theme-ignore-text-hover theme">
+                                    <span class="uppercase text-md">
+                                        Voir
+                                    </span>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="flex flex-col bg-transparent p-4 md:p-6 border-2 border-gray-800 text-gray-800 transition-colors duration-1000 theme">
+                        <div class="flex flex-row items-center justify-between">
+                            <div class="mr-4 md:mr-8">
+                                <h2 class="mb-2 text-2xl font-bold">Cupidon</h2>
+                                <p>🌐 Site internet</p>
+                            </div>
+                            <img src="images/projects/cupidon.png" alt="Logo du projet Averyl" class="w-1/4 object-contain rounded">
+                        </div>
+                        <p class="mt-6 mb-4">Site internet que j'ai fait en utilisant un design de Fatima Ahmar avec son consentement.<br><br>J'avais envie depuis longtemps de créer un algorithme donnant le pourcentage de compatibilité amoureuse entre deux personnes et il ne me manquait plus que l'interface. Bien évidemment, c'est un projet fun mais ce test ne donne pas des résultats aléatoires mais s'appuie sur les lettres des prénoms.</p>
+                        <div class="flex flex-row justify-center">
+                            <div class="flex items-center justify-center bg-transparent text-gray-800 transition-colors duration-1000 theme">
+                                <a href="https://github.com/Loot1/Cupidon/" target="_blank" class="py-2 my-2 px-4 border-2 border-gray-800 hover:border-amber-400 hover:bg-amber-400 hover:text-white theme-ignore-text-hover theme">
+                                    <span class="uppercase text-md">
+                                        Github
+                                    </span>
+                                </a>
+                            </div>
+                            <div class="flex items-center justify-center ml-10 bg-transparent text-gray-800 transition-colors duration-1000 theme">
+                                <a href="https://loot1.github.io/Cupidon" target="_blank" class="py-2 my-2 px-4 border-2 border-gray-800 hover:border-amber-400 hover:bg-amber-400 hover:text-white theme-ignore-text-hover theme">
+                                    <span class="uppercase text-md">
+                                        Voir
+                                    </span>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="flex flex-col bg-transparent p-4 md:p-6 border-2 border-gray-800 text-gray-800 transition-colors duration-1000 theme">
+                        <div class="flex flex-row items-center justify-between">
+                            <div class="mr-4 md:mr-8">
+                                <h2 class="mb-2 text-2xl font-bold">BookStore</h2>
+                                <p>📱 Application mobile</p>
+                            </div>
+                            <img src="images/projects/bookstore.jpg" alt="Logo du projet BookStore" class="w-1/4 object-contain rounded">
+                        </div>
+                        <p class="mt-6 mb-4">Projet de formation visant à créer une application mobile permettant d'enregistrer les livres lus.</p>
+                        <div class="flex items-center justify-center bg-transparent text-gray-800 transition-colors duration-1000 theme">
+                            <a href="https://gitlab.com/Loot1/bookstore" target="_blank" class="py-2 my-2 px-4 border-2 border-gray-800 hover:border-amber-400 hover:bg-amber-400 hover:text-white theme-ignore-text-hover theme">
+                                <span class="uppercase text-md">
+                                    Gitlab
+                                </span>
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="flex flex-col bg-transparent p-4 md:p-6 border-2 border-gray-800 text-gray-800 transition-colors duration-1000 theme">
+                        <div class="flex flex-row items-center justify-between">
+                            <div class="mr-4 md:mr-8">
+                                <h2 class="mb-2 text-2xl font-bold">Ancien portfolio</h2>
+                                <p>🌐 Site internet</p>
+                            </div>
+                            <img src="images/projects/old-portfolio.jpg" alt="Logo de mon ancien portfolio" class="w-1/4 object-contain rounded">
+                        </div>
+                        <p class="mt-6 mb-4">Site internet étant mon ancien CV numérique. C'est le premier vrai site que j'ai fait seul. Je l'ai fait évoluer au fur à mesure de mon apprentissage.</p>
+                        <div class="flex flex-row justify-center">
+                            <div class="flex items-center justify-center bg-transparent text-gray-800 transition-colors duration-1000 theme">
+                                <a href="https://github.com/Loot1/Old-Portfolio/" target="_blank" class="py-2 my-2 px-4 border-2 border-gray-800 hover:border-amber-400 hover:bg-amber-400 hover:text-white theme-ignore-text-hover theme">
+                                    <span class="uppercase text-md">
+                                        Github
+                                    </span>
+                                </a>
+                            </div>
+                            <div class="flex items-center justify-center ml-10 bg-transparent text-gray-800 transition-colors duration-1000 theme">
+                                <a href="https://loot1.github.io/Old-Portfolio" target="_blank" class="py-2 my-2 px-4 border-2 border-gray-800 hover:border-amber-400 hover:bg-amber-400 hover:text-white theme-ignore-text-hover theme">
+                                    <span class="uppercase text-md">
+                                        Voir
+                                    </span>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="flex flex-col bg-transparent p-4 md:p-6 border-2 border-gray-800 text-gray-800 transition-colors duration-1000 theme">
+                        <div class="flex flex-row items-center justify-between">
+                            <div class="mr-4 md:mr-8">
+                                <h2 class="mb-2 text-2xl font-bold">Weather</h2>
+                                <p>📱 Application mobile</p>
+                            </div>
+                            <img src="images/projects/weather.jpg" alt="Logo du projet Weather" class="w-1/4 object-contain rounded">
+                        </div>
+                        <p class="mt-6 mb-4">Projet de formation visant à créer une application mobile météo via l'API OpenWeatherMap.<br><br>L'application permet de rechercher la météo par ville et le fond d'écran change en fonction du temps qu'il fait.</p>
+                        <div class="flex items-center justify-center bg-transparent text-gray-800 transition-colors duration-1000 theme">
+                            <a href="https://gitlab.com/Loot1/weather" target="_blank" class="py-2 my-2 px-4 border-2 border-gray-800 hover:border-amber-400 hover:bg-amber-400 hover:text-white theme-ignore-text-hover theme">
+                                <span class="uppercase text-md">
+                                    Gitlab
+                                </span>
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="flex flex-col bg-transparent p-4 md:p-6 border-2 border-gray-800 text-gray-800 transition-colors duration-1000 theme">
+                        <div class="flex flex-row items-center justify-between">
+                            <div class="mr-4 md:mr-8">
+                                <h2 class="mb-2 text-2xl font-bold">Expérience cordiste</h2>
+                                <p>📱 Application mobile</p>
+                            </div>
+                            <img src="images/projects/experience-cordiste.jpg" alt="Logo du projet Expérience Cordiste" class="w-1/4 object-contain rounded">
+                        </div>
+                        <p class="mt-6 mb-4">Projet de formation visant à créer une application mobile vitrine pour un artisan local.<br><br>J'ai pour cela choisi Expérience Cordiste, une entreprise d'Amiens spécialisée dans les travaux en hauteur.</p>
+                        <div class="flex flex-row justify-center">
+                            <div class="flex items-center justify-center bg-transparent text-gray-800 transition-colors duration-1000 theme">
+                                <a href="https://gitlab.com/Loot1/experience-cordiste" target="_blank" class="py-2 my-2 px-4 border-2 border-gray-800 hover:border-amber-400 hover:bg-amber-400 hover:text-white theme-ignore-text-hover theme">
+                                    <span class="uppercase text-md">
+                                        Gitlab
+                                    </span>
+                                </a>
+                            </div>
+                            <div class="flex items-center justify-center ml-10 bg-transparent text-gray-800 transition-colors duration-1000 theme">
+                                <a href="recherche-alternance-communication.html" target="_blank" class="py-2 my-2 px-4 border-2 border-gray-800 hover:border-amber-400 hover:bg-amber-400 hover:text-white theme-ignore-text-hover theme">
+                                    <span class="uppercase text-md">
+                                        Voir
+                                    </span>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="flex flex-col bg-transparent p-4 md:p-6 border-2 border-gray-800 text-gray-800 transition-colors duration-1000 theme">
+                        <div class="flex flex-row items-center justify-between">
+                            <div class="mr-4 md:mr-8">
+                                <h2 class="mb-2 text-2xl font-bold">Gitloot</h2>
+                                <p>🔹 Extension VSCode</p>
+                            </div>
+                            <img src="images/projects/gitloot.jpg" alt="Logo du projet Gitloot" class="w-1/4 object-contain rounded">
+                        </div>
+                        <p class="mt-6 mb-4">Extension Visual Studio Code permettant d'envoyer son code via Git sur un repository distant d'un simple raccourci clavier via la palette de commandes du logiciel.<br><br>Une bonne opportunité de me documenter sur Visual Studio Code, ce qui m'a permis de mieux appréhender le logiciel sur lequel je développe chaque jour.</p>
+                        <div class="flex items-center justify-center bg-transparent text-gray-800 transition-colors duration-1000 theme">
+                            <a href="https://gitlab.com/Loot1/anonymous" target="_blank" class="py-2 my-2 px-4 border-2 border-gray-800 hover:border-amber-400 hover:bg-amber-400 hover:text-white theme-ignore-text-hover theme">
+                                <span class="uppercase text-md">
+                                    Gitlab
+                                </span>
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="flex flex-col bg-transparent p-4 md:p-6 border-2 border-gray-800 text-gray-800 transition-colors duration-1000 theme">
+                        <div class="flex flex-row items-center justify-between">
+                            <div class="mr-4 md:mr-8">
+                                <h2 class="mb-2 text-2xl font-bold">Anonyme</h2>
+                                <p>👾 Bot Discord</p>
+                            </div>
+                            <img src="images/projects/anonyme.jpg" alt="Logo du projet Anonyme" class="w-1/4 object-contain rounded">
+                        </div>
+                        <p class="mt-6 mb-4">Bot Discord dans le cadre d'une plateforme d'entraide permettant aux utilisateurs de s'exprimer en tout anonymat dans un salon prédéfini.<br><br>Un projet très simple mais qui me tient à coeur car c'est sûrement mon projet qui a eu le plus de retour d'utilisateurs.</p>
+                        <div class="flex items-center justify-center bg-transparent text-gray-800 transition-colors duration-1000 theme">
+                            <a href="https://gitlab.com/Loot1/anonymous" target="_blank" class="py-2 my-2 px-4 border-2 border-gray-800 hover:border-amber-400 hover:bg-amber-400 hover:text-white theme-ignore-text-hover theme">
+                                <span class="uppercase text-md">
+                                    Gitlab
+                                </span>
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="flex flex-col bg-transparent p-4 md:p-6 border-2 border-gray-800 text-gray-800 transition-colors duration-1000 theme">
+                        <div class="flex flex-row items-center justify-between">
+                            <div class="mr-4 md:mr-8">
+                                <h2 class="mb-2 text-2xl font-bold">Averyl</h2>
+                                <p>🌐 Site internet</p>
+                            </div>
+                            <img src="images/projects/averyl.png" alt="Logo du projet Averyl" class="w-1/4 object-contain rounded">
+                        </div>
+                        <p class="mt-6 mb-4">Site internet d'un serveur Minecraft nommé Averyl. C'est le tout premier site sur lequel j'ai développé, j'ai aussi participé à l'établissement du cahier des charges et à la gestion de projet.</p>
+                        <div class="flex flex-row justify-center">
+                            <div class="flex items-center justify-center bg-transparent text-gray-800 transition-colors duration-1000 theme">
+                                <a href="https://github.com/Loot1/Averyl/" target="_blank" class="py-2 my-2 px-4 border-2 border-gray-800 hover:border-amber-400 hover:bg-amber-400 hover:text-white theme-ignore-text-hover theme">
+                                    <span class="uppercase text-md">
+                                        Github
+                                    </span>
+                                </a>
+                            </div>
+                            <div class="flex items-center justify-center ml-10 bg-transparent text-gray-800 transition-colors duration-1000 theme">
+                                <a href="https://loot1.github.io/Averyl" target="_blank" class="py-2 my-2 px-4 border-2 border-gray-800 hover:border-amber-400 hover:bg-amber-400 hover:text-white theme-ignore-text-hover theme">
+                                    <span class="uppercase text-md">
+                                        Voir
+                                    </span>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
             </div>
         </div>
         <footer class="w-full py-8">
