@@ -31,10 +31,9 @@ function changeTheme() {
     else if(!localStorage.getItem("theme")) localStorage.setItem("theme", 'dark')
 }
 
-window.onload = () => {
-    console.log(localStorage.getItem("theme"))
+window.addEventListener('load', () => {
     if(localStorage.getItem("theme") == 'dark') {
         changeTheme()
         document.getElementById("themeToggle").checked = true
     }
-}
+})

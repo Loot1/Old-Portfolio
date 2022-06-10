@@ -3,18 +3,18 @@
 <head>
     <meta charset="utf-8"/>
     <meta name="author" content="Louis Sachy, louisachy@icloud.com">
-    <meta name="description" content="Je m'appelle Louis SACHY et ce site constitue mon CV numérique. Cette page me présente et parle de mes passions."/>
+    <meta name="description" content="Snack du projet Expérience Cordiste réalisé par Louis Sachy."/>
     <meta name="keywords" content="louis sachy, développeur, louis, amiens, développeur amiens, louis amiens, développeur mobile, louis sachy amiens, développeur mobile louis sachy"/>
     <meta name="language" content="fr-FR">
     <meta name="robots" content="index,follow"/>
-    <meta name="subject" content="Présentation de Louis Sachy">
+    <meta name="subject" content="Projet Experience Cordiste">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Louis SACHY - Présentation</title>
-    <script src="assets/js/navbar.js"></script>
-    <script src="assets/js/theme.js"></script>
-    <script src="assets/js/age.js"></script>
-    <script src="assets/libs/tailwind.js"></script>
-    <script src="assets/libs/fontawesome.js"></script>
+    <title>Louis SACHY - Expérience Cordiste</title>
+    <script src="../assets/js/navbar.js"></script>
+    <script src="../assets/js/theme.js"></script>
+    <script src="../assets/libs/tailwind.js"></script>
+    <script src="../assets/libs/fontawesome.js"></script>
+    <script async src="../assets/libs/snack.js"></script>
 </head>
 <body class="font-mono bg-white relative lg:overflow-hidden lg:h-screen transition-colors duration-1000 theme">
     <div class="hidden md:block absolute -bottom-32 -left-32 w-96 h-96 z-40">
@@ -36,15 +36,15 @@
         <header class="h-24 sm:h-32 flex items-center z-30 w-full">
             <div class="container mx-auto px-6 flex items-center justify-between">
                 <div class="uppercase text-gray-800 font-black text-3xl flex items-center transition-colors duration-1000 theme">
-                    <a href="index.html" class="text-3xl ml-3 mt-1 hover:text-amber-400">Louis SACHY</a>
+                    <a href="../index.html" class="text-3xl ml-3 mt-1 hover:text-amber-400">Louis SACHY</a>
                 </div>
                 <div class="flex items-center">
                     <nav class="font-sen text-gray-800 uppercase text-lg md:flex items-center hidden transition-colors duration-1000 theme">
-                        <a href="presentation.html" class="py-2 px-6 flex hover:text-amber-400">Présentation</a>
-                        <a href="competences.html" class="py-2 px-6 flex hover:text-amber-400">Compétences</a>
-                        <a href="projets.html" class="py-2 px-6 flex hover:text-amber-400">Projets</a>
-                        <a href="parcours.html" class="py-2 px-6 flex hover:text-amber-400">Parcours</a>
-                        <a href="benevolat.html" class="py-2 px-6 flex hover:text-amber-400">Bénévolat</a>
+                        <a href="../presentation.html" class="py-2 px-6 flex hover:text-amber-400">Présentation</a>
+                        <a href="../competences.html" class="py-2 px-6 flex hover:text-amber-400">Compétences</a>
+                        <a href="../projets.html" class="py-2 px-6 flex hover:text-amber-400">Projets</a>
+                        <a href="../parcours.html" class="py-2 px-6 flex hover:text-amber-400">Parcours</a>
+                        <a href="../benevolat.html" class="py-2 px-6 flex hover:text-amber-400">Bénévolat</a>
                     </nav>
                     <button class="md:hidden flex flex-col ml-4" onclick="changeTheme()">
                         <i id="themeIcon" class="fa-solid fa-sun text-gray-800 hover:text-amber-400 text-3xl transition-colors duration-1000 theme"></i>
@@ -57,33 +57,29 @@
         </header>
         <div class="hidden pb-4 md:hidden md:pb-0" id="mobile-menu">
             <ul class="font-sen text-gray-800 uppercase text-md md:flex items-center transition-colors duration-1000 theme">
-                <li><a href="presentation.html" class="flex hover:text-amber-400 py-4 pl-4 sm:pl-16">Présentation</a></li>
-                <li><a href="competences.html" class="flex hover:text-amber-400 py-4 pl-4 sm:pl-16">Compétences</a></li>
-                <li><a href="projets.html" class="flex hover:text-amber-400 py-4 pl-4 sm:pl-16">Projets</a></li>
-                <li><a href="parcours.html" class="flex hover:text-amber-400 py-4 pl-4 sm:pl-16">Parcours</a></li>
-                <li><a href="benevolat.html" class="flex hover:text-amber-400 py-4 pl-4 sm:pl-16">Bénévolat</a></li>
+                <li><a href="../presentation.html" class="flex hover:text-amber-400 py-4 pl-4 sm:pl-16">Présentation</a></li>
+                <li><a href="../competences.html" class="flex hover:text-amber-400 py-4 pl-4 sm:pl-16">Compétences</a></li>
+                <li><a href="../projets.html" class="flex hover:text-amber-400 py-4 pl-4 sm:pl-16">Projets</a></li>
+                <li><a href="../parcours.html" class="flex hover:text-amber-400 py-4 pl-4 sm:pl-16">Parcours</a></li>
+                <li><a href="../benevolat.html" class="flex hover:text-amber-400 py-4 pl-4 sm:pl-16">Bénévolat</a></li>
             </ul>
         </div>
-        <div class="flex relative z-20 items-center mt-8">
-            <div class="container mx-auto px-6 flex flex-col justify-between items-center relative py-4">
-                <div class="flex flex-col items-center">
-                    <img src="assets/images/me.jpg" alt="Photo de moi regardant la tour Eiffel" class="rounded-full w-40 mx-auto"/>
-                    <h1 class="max-w-4xl text-4xl md:text-6xl font-bold text-gray-800 text-center pb-2 pt-6 transition-colors duration-1000 theme">
-                        👋 Présentation
-                    </h1>
-                    <p class="max-w-5xl text-2xl md:text-3xl mt-6 text-center text-gray-800 transition-colors duration-1000 theme" id="age">
-                        Louis, %age%, amiénois, développeur autodidacte depuis mes 12 ans. Passionné du monde du numérique, je m'apprête maintenant à continuer mon parcours en communication 📣
-                    </p>
-                    <div class="flex items-center justify-center bg-transparent text-gray-800 transition-colors duration-1000 theme">
-                        <a href="parcours.html" class="py-2 my-2 px-4 mt-8 md:my-10 border-2 border-gray-800 hover:border-amber-400 hover:bg-amber-400 hover:text-white theme-ignore-text-hover theme">
-                            <span class="uppercase text-md">
-                                Mon parcours
-                            </span>
-                        </a>
-                    </div>
-                    <p class="max-w-5xl text-2xl md:text-3xl mt-6 md:mt-0 text-center text-gray-800 transition-colors duration-1000 theme">
-                        Je suis également passionné de jeux-vidéos, de musique et j'aime beaucoup le milieu associatif notamment le secourisme ⛑️
-                    </p>
+        <div class="flex flex-col relative z-20 items-center mt-8">
+            <h1 class="max-w-4xl text-4xl md:text-6xl font-bold text-gray-800 text-center py-2 transition-colors duration-1000 theme">
+                📱 Expérience cordiste
+            </h1>
+            <div class="container flex flex-col justify-between items-center relative py-4 mt-8 mx-auto px-6">
+                <div
+                    data-snack-id="@loot1/gitlab.com-loot1-experience-cordiste@simple"
+                    data-snack-dependencies="expo-av,expo-font,expo-status-bar,react-native-maps,react-native-screens,react-navigation/stack,react-native-reanimated,react-navigation/native,react-native-gesture-handler,react-navigation/bottom-tabs,react-native-safe-area-context,react-native-community/masked-view,react-native-vector-icons/Ionicons,react-native-vector-icons,prop-types"
+                    data-snack-preview="true"
+                    data-snack-platform="ios"
+                    data-snack-theme="dark"
+                    data-snack-loading="auto"
+                    data-snack-name="Expérience Cordiste"
+                    data-snack-description="Prévisualisation du projet Expérience Cordiste"
+                    style="overflow:hidden;background:#212121;border:1px solid var(--color-border);border-radius:4px;height:665px;width:100%;"
+                >
                 </div>
             </div>
         </div>
@@ -112,4 +108,5 @@
         </footer>
     </main>
 </body>
+
 </html>
